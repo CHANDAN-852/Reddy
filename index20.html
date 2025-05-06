@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Music World</h2>
+    <ul>
+      <li>Home</li>
+      <li>Search</li>
+      <li>Your Library</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="top-bar">
+      <input type="text" placeholder="Search for songs, artists..." />
+    </div>
+    <section id="home-section">
+      <h2>Welcome Home 🎧</h2>
+      <p>Here's your recently played, top charts, and recommendations.</p>
+    </section>    
+    <div class="content">
+      <h2>Recently Played</h2>
+      <div class="playlist">
+        <div class="song-card">Song 1</div>
+        <div class="song-card">Song 2</div>
+        <div class="song-card">Song 3</div>
+        <div class="song-card">Song 4</div>
+      </div>
+    </div>
+  </div>
+<div class="player">
+  <div id="current-song">🎵 No song playing</div>
+  <div>
+    <button id="prev">⏮️</button>
+    <button id="play-pause">▶️</button>
+    <button id="next">⏭️</button>
+  </div>
+</div>
+
+<audio id="audio-player" src="songs/song1.mp3"></audio>
+<audio id="audio-player" src="songs/song2.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
